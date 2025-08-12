@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | WebAR 2</title>
+    <title>Unity WebGL Player | WebAR</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -40,8 +40,8 @@
 		<imagetarget id='lady' src='targets/lady.png'></imagetarget>
 		<imagetarget id='reel' src='targets/reel.png'></imagetarget>
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
-		<imagetarget id='rockBird' src='targets/rmn.png'></imagetarget>
-		<imagetarget id='light' src='targets/reel.png'></imagetarget>
+		<imagetarget id='rockBird' src='targets/bfly.png'></imagetarget>
+		<imagetarget id='light' src='targets/lady.png'></imagetarget>
 		<imagetarget id='lookBird' src='targets/lady.png'></imagetarget>
 		<imagetarget id='NC AR' src='targets/NC AR.jpg'></imagetarget>
 
@@ -83,7 +83,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/1.loader.js"></script>
+    <script src="Build/7.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -114,13 +114,13 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/1.data",
-                    frameworkUrl: "Build/1.framework.js",
-                    codeUrl: "Build/1.wasm",
+                    dataUrl: "Build/7.data",
+                    frameworkUrl: "Build/7.framework.js",
+                    codeUrl: "Build/7.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "WebAR 2",
-                    productVersion: "0.1.0",
+                    productName: "WebAR",
+                    productVersion: "1.0",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                     // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
